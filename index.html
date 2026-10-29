@@ -27,12 +27,7 @@
   --text-mid: #A9B3D6;
   --shadow: rgba(0,0,0,0.4);
 }
-@font-face {
-  font-family: 'Material Symbols Outlined';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/material-symbols-outlined.woff2') format('truetype');
-}
+/* Material Symbols loaded via Google Fonts CDN */
 .material-symbols-outlined {
   font-family: 'Material Symbols Outlined';
   font-weight: normal;
@@ -358,12 +353,9 @@ html, body { overscroll-behavior: none; }
     <nav>
       <a href="#caracteristicas">Características</a>
       <a href="#discapacidades">Discapacidades</a>
-      <a href="#demo">Demo</a>
-      <a href="#descargar">Descargar</a>
     </nav>
     <div style="flex:1"></div>
     <button class="icon-btn" onclick="toggleTheme()" title="Tema"><span class="material-symbols-outlined" id="themeIcon">wb_sunny</span></button>
-    <a class="btn-primary" href="https://miguel-castano-usb.github.io/IncluyemeApp/">Abrir la app</a>
   </header>
 
   <main class="landing">
@@ -374,8 +366,7 @@ html, body { overscroll-behavior: none; }
         <h1 class="hero-title">Inclúyeme</h1>
         <div class="hero-sub">Información clara y estrategias pedagógicas para apoyar a tus estudiantes con diversas discapacidades cognitivas</div>
         <div class="cta-row">
-          <a class="btn-primary" href="https://miguel-castano-usb.github.io/IncluyemeApp/">Comenzar ahora</a>
-          <a class="btn-guest" href="#discapacidades">Explorar contenidos</a>
+          <a class="btn-primary" href="#discapacidades">Explorar contenidos</a>
         </div>
       </div>
     </section>
@@ -422,11 +413,6 @@ html, body { overscroll-behavior: none; }
           <h3>Tema claro y oscuro</h3>
           <p>Adapta la interfaz a tus preferencias y reduce la fatiga visual.</p>
         </div>
-        <div class="feature-card">
-          <div class="icon">📱</div>
-          <h3>Multiplataforma</h3>
-          <p>Úsala desde el navegador o instálala como APK en Android.</p>
-        </div>
       </div>
     </section>
 
@@ -464,31 +450,7 @@ html, body { overscroll-behavior: none; }
       </div>
     </section>
 
-    <!-- Demo -->
-    <section class="section" id="demo">
-      <div class="section-head">
-        <h2>Pruébala ahora</h2>
-        <p>Interactúa con la app directamente desde aquí.</p>
-      </div>
-      <div class="demo-frame">
-        <iframe src="https://miguel-castano-usb.github.io/IncluyemeApp/" loading="lazy" title="Demo Inclúyeme"></iframe>
-      </div>
-      <div style="text-align:center;margin-top:12px">
-        <a class="btn-primary" style="width:auto;padding:0 20px" href="https://miguel-castano-usb.github.io/IncluyemeApp/" target="_blank" rel="noopener">Abrir en pantalla completa</a>
-      </div>
-    </section>
 
-    <!-- Final CTA -->
-    <section class="final-cta" id="descargar">
-      <div class="gradient-card" style="max-width:720px;margin:0 auto">
-        <div style="font-size:32px">✨</div>
-        <h2>Comienza a enseñar de forma inclusiva</h2>
-        <p>Accede gratis y empieza a explorar contenidos pensados para docentes.</p>
-        <div class="cta-row">
-          <a class="btn-primary" style="background:#fff;color:var(--dark-green)" href="https://miguel-castano-usb.github.io/IncluyemeApp/">Abrir la app</a>
-        </div>
-      </div>
-    </section>
   </main>
 
   <footer class="footer">
